@@ -7,7 +7,7 @@
 # Find the product abc.
 
 a**2+b**2ww
-3333
+
 if (a + b + c) == 1000:
 
 b
