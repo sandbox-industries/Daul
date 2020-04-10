@@ -37,31 +37,3 @@ while x+y < len(largenum):
     x += 1
 end = time.time()
 print(largestProduct, end-start)
-
-# def solve(x):
-# #     import time
-# #     start = time.time()
-# #
-# #     num_of_digits = 13
-# #
-# #     factor = ''
-# #     factors = []
-# #     products = []
-# #     a = 0
-# #     if len(x) > num_of_digits:
-# #
-# #         for digit in str(x):
-# #             #[a:num_of_digits+1]
-# #             factor += digit
-# #             if len(factor) == num_of_digits:
-# #                 factors.append(factor)
-# #     for factor in factors:
-# #         product = 1
-# #         if '0' in factor:
-# #             factors.remove(factor)
-# #             continue
-# #         for digit in factor:
-# #             product *= int(digit)
-# #         products.append(product)
-# #     end = time.time()
-# #     return print(max(products), products, factors, start-end)

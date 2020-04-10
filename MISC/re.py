@@ -1,4 +1,3 @@
-import re
 #as re for re in re as re
 
 #help(re)

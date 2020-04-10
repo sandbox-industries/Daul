@@ -1,5 +1,5 @@
 import pandas as pd
-import re
+
 trumpTweets = r"D:\Python\Pycharm\Repos\Daul\Datasets\trumptweets\trumptweets.csv"
 df_Tweets = pd.read_csv(trumpTweets)
 uniques = set()
