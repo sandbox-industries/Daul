@@ -10,8 +10,8 @@ def solve(sum_of_sides):
     import time
     start = time.time()
     for a in range(1,sum_of_sides):
-        for b in range(a+1,sum_of_sides):
-            for c in range(b+1,sum_of_sides):
+        for b in range(a+1,sum_of_sides - a):
+            for c in range(b+1,sum_of_sides - (a + b)):
                 # Loop through all possible values of a, b, c
 
                 if a ** 2 + b ** 2 == c ** 2 and sum_of_sides % (a + b + c) == 0:
