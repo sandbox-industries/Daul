@@ -19,10 +19,8 @@ for i in range(len(names)):
         name_int += letters_dict[char]
     names[i] = name_int
 
-# key is and int 1-... || value is 
+# key is and int 1-... || value is the sum of the translated characters
 names_dict = dict(zip(range(1, len(names)+1), names))
-
-print(names_dict)
 
 total = sum([key*val for key, val in names_dict.items()])
 
