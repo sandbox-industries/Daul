@@ -19,7 +19,7 @@ def solve(sum_of_sides):
                     # divide into our desired sum (1000) evenly because the desired
                     # right triangle can be a scaled up version of a smaller one
 
-                    quotient = 1000 // (a + b + c)
+                    quotient = sum_of_sides // (a + b + c)
                     a *= quotient
                     b *= quotient
                     c *= quotient
@@ -28,7 +28,7 @@ def solve(sum_of_sides):
 
                     return a * b * c, time.time()-start
 
-print(solve(1000))
+print(solve(10000))
 
 # import time
 # sum_of_sides = 1000
