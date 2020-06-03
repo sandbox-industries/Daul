@@ -4,14 +4,15 @@ file = 'D:\Python\Pycharm\Repos\Daul\Datasets\p022_names.txt'
 letters = ascii_uppercase
 
 # Read in file and turn the line of text in to a list of strings
-with open(file, "rt") as file:
+with open(file, 'rt') as file:
 
-    line = file.readline()
+    line = file.read()
 
     names = sorted([i[1:-1] for i in line.split(",")])
 
 # key is an upper-case letter || value is int 1-26 {'A': 1, 'B': 2, ...}
 letters_dict = dict(zip(letters, range(1, len(letters)+1)))
+
 
 for i in range(len(names)):
     name_int = 0
